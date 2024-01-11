@@ -67,3 +67,9 @@ group :test do
   gem "selenium-webdriver"
 
 end
+
+# Simple form
+gem "simple_form"
+
+# Faker
+gem 'faker'
