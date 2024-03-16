@@ -36,12 +36,40 @@
   align-items: end;
 }
 
+.flat-show {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  margin: 40px;
+  margin-right: 94px;
+}
+
 .flat-show-card {
   margin-bottom: 20px;
+}
+
+.booking-form {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .flat-show-card h1,
 .flat-show-card h3,
 .flat-show-card h5 {
   margin-bottom: 10px;
+}
+
+.flat-box {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+}
+
+.flat-box-image {
+  width: 40%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
 }

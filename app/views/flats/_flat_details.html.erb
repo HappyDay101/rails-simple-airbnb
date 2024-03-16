@@ -1,10 +1,15 @@
-<div class="flat-show-card">
-  <h1><%= flat.name %></h1>
-  <p class="flat-show-address"><%= flat.address %></p>
-</div>
-
-<div class="flat-show-card">
-  <h3>A bit more about this flat...</h3>
-  <p><%= flat.description %></p>
-  <div class="map" style="background-image: url('<%= flat.map_image_url %>')"></div>
+  
+<h1><%= flat.name %></h1>
+<div class="flat-box">
+  <div class="flat-box-image" style="background-image: url('<%= flat.picture_url.presence || 'https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200' %>')"></div>
+  <div class="flat-details">
+    <div class="flat-show-card">
+      <p class="flat-show-address"><%= flat.address %></p>
+    </div>
+    <div class="flat-show-card">
+      <h3>A bit more about this flat...</h3>
+      <p><%= flat.description %></p>
+      <div class="map" style="background-image: url('<%= flat.map_image_url %>')"></div>
+    </div>
+  </div>
 </div>
